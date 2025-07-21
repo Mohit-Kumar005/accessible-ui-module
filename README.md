@@ -1,12 +1,50 @@
-# React + Vite
+Floating Accessibility Widget
+A modern, lightweight, and embeddable floating accessibility widget built with React and Vite. This tool empowers users to customize their browsing experience in real-time with a clean, user-friendly interface.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Demo: accessible-ui-module.vercel.app
 
-Currently, two official plugins are available:
+Features-
+This widget provides a comprehensive suite of tools to enhance web accessibility:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Visual Adjustments
+ • Contrast+: Increases the color contrast of the page for better readability.
 
-## Expanding the ESLint configuration
+ • Highlight Links: Makes all hyperlinks prominent with a distinct background and border.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ • Bigger Text: Cycles through multiple font sizes to reduce eye strain.
+
+ • Text Spacing: Modifies letter and line spacing for improved readability.
+
+Behavior Controls
+ • Pause Animations: Stops all CSS and JavaScript animations to help users with motion sensitivity.
+
+ • Hide Images: Toggles the visibility of all images and SVG elements.
+
+ • Dyslexia-Friendly Font: Switches the entire page to the OpenDyslexic font, loaded via a CDN.
+
+Interface Tools
+Cursor: Enlarges the mouse pointer for better visibility.
+
+Tooltips: Forces the display of title and aria-label attributes for all elements.
+
+Page Structure: Outlines all heading elements (h1-h6) to provide a clear structural overview of the page.
+
+Tech Stack
+ • Framework: React (with Hooks)
+
+ • Build Tool: Vite
+
+ • Styling: Plain CSS with CSS Variables (No frameworks like Tailwind CSS)
+
+ • Icons: Lucide React
+
+ • Deployment: Vercel
+
+How It Works
+ The widget is designed to be self-contained and easy to integrate.
+
+ • State Management: All user settings are managed within React state. These settings are persisted in the browser's localStorage, so a user's preferences are remembered on their next visit.
+
+ • Dynamic Styling: A custom React hook (useAccessibilitySettings) listens for changes in the settings. When a setting is changed, it dynamically injects a <style> tag into the document's <head> with the             necessary CSS rules to alter the page's appearance.
+
+ • Dynamic Positioning: The widget uses a scroll event listener in JavaScript to detect when the page's footer is visible. It then adds a CSS class to itself to dynamically change its bottom position, ensuring it    never overlaps with the footer content. This creates a smooth and professional user experience.
