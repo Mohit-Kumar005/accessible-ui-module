@@ -1,0 +1,17 @@
+.floating-button {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--blue-600);
+  color: var(--white);
+  border-radius: 9999px;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  /* box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); */
+  transition: all 0.4s;
+}
+
+.floating-button:hover {
+  background-color: var(--blue-700);
+  transform: scale(1.05);
+}

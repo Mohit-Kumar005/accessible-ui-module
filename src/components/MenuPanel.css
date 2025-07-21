@@ -1,0 +1,47 @@
+.menu-panel {
+  position: absolute;
+  bottom: 80px; /* 5rem */
+  right: 0;
+  width: 320px;
+  background-color: var(--white);
+  color: var(--gray-800);
+  border-radius: 0.5rem;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  transition: all 0.3s ease;
+  transform-origin: bottom right;
+  transform: scale(0.95);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu-panel.open {
+  transform: scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid var(--gray-200);
+  border-radius: 1rem 1rem 0 0;
+}
+
+.menu-header h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.reset-all-button {
+  font-size: 0.75rem;
+  color: var(--blue-600);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.reset-all-button:hover {
+  text-decoration: underline;
+}
