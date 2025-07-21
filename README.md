@@ -2,6 +2,7 @@ Floating Accessibility Widget
 A modern, lightweight, and embeddable floating accessibility widget built with React and Vite. This tool empowers users to customize their browsing experience in real-time with a clean, user-friendly interface.
 
 Live Demo: 🔗 [Live Site](https://accessible-ui-module.vercel.app/)
+
 Features-
 This widget provides a comprehensive suite of tools to enhance web accessibility:
 
